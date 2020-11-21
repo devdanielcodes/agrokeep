@@ -1,73 +1,108 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Agrokeep
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="home">
+    <img class="hero" src="../assets/hero.png" alt="">
+    <logo />
+    <div class="main">
+      <h1>Reduce wastage of food <br>with <span>Agrokeep</span></h1>
+      <div class="misc">
+        <p>coming soon</p>
+        <div class="btns">
+          <button><img src="../assets/playstore.svg" alt="" srcset=""> PLAYSTORE</button>
+          <button><img src="../assets/apple.svg" alt="" srcset=""> APPLESTORE</button>
+        </div>
       </div>
     </div>
+    <Misc />
   </div>
 </template>
 
 <script>
-export default {}
+  export default {
+    
+  }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style scoped>
+.home{
+  height: 100vh;
+}
+.hero{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.main{
+  color: white;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+.main h1{
+  font-weight: 300;
+  font-size: 60px;
+}
+.main h1 span{
+  border-bottom: 2px solid #F2C94C;
+  padding-bottom: 5px;
+}
+.misc{
+  margin-top: 70px;
+}
+.misc p{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.misc .btns{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  width: 450px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+button{
+  color: #27AE60;
+  padding: 15px 25px;
+  font-size: 20px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+button img{
+  margin-right: 10px;
 }
-
-.links {
-  padding-top: 15px;
+@media screen and (max-width: 760px){
+  .hero{
+    width: 100%;
+    object-fit: cover;
+  }
+  .main {
+    margin-top: 10px;
+  }
+  .misc{
+    margin-top: 30px;
+  }
+  .main h1{
+    font-size: 35px;
+  }
+  .misc p{
+    font-size: 20px;
+  }
+  .misc .btns{
+    width: 35%
+  }
+  button{
+    font-size: 17px;
+    padding: 15px 18px;
+  }
 }
 </style>
