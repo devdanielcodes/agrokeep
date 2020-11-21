@@ -23,6 +23,10 @@ div{
   z-index: 10;
   position: relative;
 }
+div .logo{
+    width: 90px;
+    margin-top: 40px;
+}
 a{
   text-decoration: none;
   color: white;
