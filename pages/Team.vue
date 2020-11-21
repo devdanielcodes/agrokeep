@@ -6,7 +6,7 @@
                 <div class="team">
                     <div class="person">
                         <h2>Chinazo</h2>
-                        <h4>Backend Devloper</h4>
+                        <h4>Data Scientist</h4>
                         <ul>
                             <li><a href="">Tw.</a></li>
                             <li><a href="">Ig.</a></li>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="person">
                         <h2>John Afolabi</h2>
-                        <h4>Data Analyst</h4>
+                        <h4>Backend Developer</h4>
                         <ul>
                             <li><a href="">Tw.</a></li>
                             <li><a href="">Ig.</a></li>
