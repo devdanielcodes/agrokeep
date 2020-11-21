@@ -33,6 +33,7 @@ a{
   left: 0;
   top: 40px;
   pointer-events: none;
+  z-index: -1;
 }
 @media screen and (max-width: 760px){
   div{
