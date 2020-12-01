@@ -30,7 +30,7 @@
   padding:  0 5%;
   margin: auto; 
   z-index: 10;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 .socials{
